@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 
 export const Home = (): ReactElement => {
   return <div>home page</div>;
