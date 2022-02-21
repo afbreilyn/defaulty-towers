@@ -4,8 +4,8 @@ import './index.css';
 import Layout from './Layout/Layout';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './routes/Home';
-import { ArbitraryOtherRoute } from './routes/ArbitraryOtherRoute';
+import { Home } from './routes/Home/Home';
+import { ArbitraryOtherRoute } from './routes/ArbitraryOtherRoute/ArbitraryOtherRoute';
 
 ReactDOM.render(
   <React.StrictMode>

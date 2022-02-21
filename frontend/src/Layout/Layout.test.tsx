@@ -4,6 +4,8 @@ import Layout from './Layout';
 import { BrowserRouter } from 'react-router-dom';
 
 describe('<Layout />', () => {
+  let subject: HTMLElement;
+
   describe('the buttons', () => {
     it('shows a link to the Arbitrary Page', () => {
       render(
@@ -11,10 +13,10 @@ describe('<Layout />', () => {
           <Layout />
         </BrowserRouter>,
       );
-      const linkElement = screen.getByLabelText('Link To Arbitrary Page');
+      subject = screen.getByLabelText('Link To Arbitrary Page');
 
-      expect(linkElement).toBeInTheDocument();
-      expect(linkElement).toHaveTextContent('Arbitrary Page');
+      expect(subject).toBeInTheDocument();
+      expect(subject).toHaveTextContent('Arbitrary Page');
     });
 
     it('shows a link to the Arbitrary Page', () => {
@@ -23,10 +25,10 @@ describe('<Layout />', () => {
           <Layout />
         </BrowserRouter>,
       );
-      const linkElement = screen.getByLabelText('Link To Home Page');
+      subject = screen.getByLabelText('Link To Home Page');
 
-      expect(linkElement).toBeInTheDocument();
-      expect(linkElement).toHaveTextContent('Home');
+      expect(subject).toBeInTheDocument();
+      expect(subject).toHaveTextContent('Home');
     });
   });
 });
