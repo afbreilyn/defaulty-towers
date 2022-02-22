@@ -4,5 +4,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {},
-  "scripts": {}
+  "scripts": {
+    "start-frontend": "./scripts/start-frontend.sh"
+  }
 }
